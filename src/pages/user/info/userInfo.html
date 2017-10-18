@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>내 정보</ion-title>
+  </ion-navbar>
+</ion-header>
+  
+<ion-content class="icontent" scroll=false>
+  <ion-list class="ilist">
+    <ion-list-header class="iheader" no-lines>
+      Info
+    </ion-list-header>
+    <ion-item class="iitem">UID
+      <ion-note class="inote" item-end>
+        {{user.uid}}
+      </ion-note>
+    </ion-item>
+    <ion-item class="iitem">Email
+      <ion-note class="inote" item-end>
+        {{user.email}}
+      </ion-note>
+    </ion-item>
+    <!-- <ion-item class="iitem">Display name
+      <ion-note class="inote" item-end>
+        {{user.name}}
+      </ion-note>
+    </ion-item> -->
+    <ion-item class="iitem">Creation date
+      <ion-note class="inote" item-end>
+        {{user.createDate}}
+      </ion-note>
+    </ion-item>
+    <ion-item no-lines class="iitem">Auth state
+      <ion-note item-end [ngClass]="'auth-color-' + (user.authenticated ? 'green' : 'red')">
+        {{user.authenticated ? "승인" : "대기"}}
+      </ion-note>
+    </ion-item>
+
+    <ion-list-header class="iheader">
+      Config
+    </ion-list-header>
+    <ion-item class="iitem cursor" (click)="signOut()">
+      <ion-note class="config">Sign out</ion-note>
+    </ion-item>
+  </ion-list>
+</ion-content>

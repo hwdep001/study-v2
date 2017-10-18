@@ -1,0 +1,34 @@
+page-userInfo {
+
+    .icontent {
+        .ilist {
+            
+            .iheader {
+                background-color: #e9ebee;
+                margin: 0px;
+            }
+
+            .iitem {
+
+                .inote {
+                }
+
+                .auth-color-green {
+                    color: green;
+                }
+
+                .auth-color-red {
+                    color: red;
+                }
+
+                .config {
+                    color: #0CB3B6;
+                }
+            }
+        }
+    }
+
+    .cursor {
+        cursor: pointer;
+    }
+}
