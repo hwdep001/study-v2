@@ -89,7 +89,7 @@ export class AuthService {
     switch(this.platform) {
       case 'browser':
       case 'core':
-        return firebase.auth().signInWithPopup(provider);
+        // return firebase.auth().signInWithPopup(provider);
       case 'android':
       case 'ios':
       default:
