@@ -4,8 +4,6 @@ page-userInfo {
         .ilist {
             
             .iheader {
-                background-color: #e9ebee;
-                margin: 0px;
             }
 
             .iitem {
@@ -14,21 +12,17 @@ page-userInfo {
                 }
 
                 .auth-color-green {
-                    color: green;
+                    color: map-get($colors, secondary);
                 }
 
                 .auth-color-red {
-                    color: red;
+                    color: map-get($colors, danger);
                 }
 
                 .config {
-                    color: #0CB3B6;
+                    color: map-get($colors, light-green);
                 }
             }
         }
-    }
-
-    .cursor {
-        cursor: pointer;
     }
 }

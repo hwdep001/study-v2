@@ -22,8 +22,9 @@ $app-direction: ltr;
 // To view all the possible Ionic variables, see:
 // http://ionicframework.com/docs/theming/overriding-ionic-variables/
 
-// $toolbar-background: #3c5a99;
-// $grid-columns:               100 !default;
+$toolbar-background: #3c5a99;
+
+$grid-columns: 100 !default;
 
 // Named Color Variables
 // --------------------------------------------------
@@ -39,16 +40,22 @@ $colors: (
   danger:     #f53d3d,
   light:      #f4f4f4,
   dark:       #222,
+  gray:     gray,
 
-  // content-bg: #e9ebee,
-  // content-bg: #f5f5ff,
-  
-  level-2:    #f53d3d,
-  level-1:    hsla(0, 90%, 60%, 0.40),
-  level0:     #e9ebee,
-  level1:     hsla(218, 100%, 64%, 0.40),
-  level2:     #488aff
+  light-green:  rgba(1, 189, 146, 0.72),
+ 
+  content-bg: #e9ebee,  
+  list-header: #757575,
 );
+
+$word-levels: (
+  -2:    #f53d3d,
+  -1:    hsla(0, 90%, 60%, 0.40),
+  0:     #e9ebee,
+  1:     hsla(218, 100%, 64%, 0.40),
+  2:     #488aff
+);
+
 
 
 // App iOS Variables

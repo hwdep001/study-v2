@@ -1,7 +1,6 @@
 page-signin {
     
         .icontent {
-            user-select: text;
     
             .scroll-content {
                 padding-bottom: 0px !important;
@@ -30,7 +29,7 @@ page-signin {
                     }
     
                     .signInBtn {
-                        background-color: rgba(1, 189, 146, 0.72);
+                        background-color: map-get($colors, light-green);
                         height: 35px;
                         font-size: 15px;
     

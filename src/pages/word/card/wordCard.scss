@@ -57,7 +57,7 @@ page-wordCard {
     
             .icontent-foot {
                 .menu {
-                    background-color: #e9ebee;
+                    background-color: map-get($colors, content-bg);
                     position: absolute;
                     bottom: 0px;
                     text-align: center;
@@ -82,22 +82,22 @@ page-wordCard {
             }
     
             .icard-border-2 {
-                border-color: map-get($colors, level-2) !important;
+                border-color: map-get($word-levels, -2) !important;
             }
             .icard-border-1 {
-                border-color: map-get($colors, level-1) !important;
+                border-color: map-get($word-levels, -1) !important;
             }
             .icard-border0 {
-                border-color: map-get($colors, level0) !important;
+                border-color: map-get($word-levels, 0) !important;
             }
             .icard-borderundefined {
-                border-color: map-get($colors, level0) !important;
+                border-color: map-get($word-levels, 0) !important;
             }
             .icard-border1 {
-                border-color: map-get($colors, level1) !important;
+                border-color: map-get($word-levels, 1) !important;
             }
             .icard-border2 {
-                border-color: map-get($colors, level2) !important;
+                border-color: map-get($word-levels, 2) !important;
             }
         }
     }

@@ -31,45 +31,58 @@
 
 
 
-// // side menu background color
-// ion-menu{
-//     .fixed-content {
-//         background-color: white;    
-//     }
-//     .scroll-content {
-//         background-color: white;
+// side menu background color
+ion-menu{
+    .fixed-content {
+        background-color: white;    
+    }
+    .scroll-content {
+        background-color: white;
 
-//         ion-list-header {
-//             background-color: white;
-//             margin: 0px;
-//             max-height: 30px;
-//             min-height: 30px;
+        ion-list-header {
+            background-color: white;
+            margin: 0px;
+            max-height: 30px;
+            min-height: 30px;
 
-//             ion-label {
-//                 margin-bottom: 0px;
-//             }
-//         }
+            ion-label {
+                margin-bottom: 0px;
+            }
+        }
 
-//         button {
-//             background-color: white;
-//         }
-//     }
+        button {
+            background-color: white;
+        }
+    }
+}
 
-// }
-
-// // 
-// ion-nav {
-//     .fixed-content{
-//         // background-color: map-get($colors, content-bg);
-//         background-color: white;
-//     }
-// }
+// page content background color
+ion-nav {
+    .fixed-content{
+        background-color: white;
+    }
+}
 
 
-// //
-// .icontent {
+// custom
+.icontent {
+    user-select: text;
+    
+    .scroll-content {
+        background-color: map-get($colors, content-bg);
+    }
 
-//     .scroll-content {
-//         background-color: #e9ebee !important;
-//     }
-// }
+    .ilist {
+        .iheader {
+            background-color: map-get($colors, content-bg);
+            margin: 0px;
+        }
+        .ilist-item {
+            background-color: map-get($colors, content-bg);
+        }
+    }
+}
+
+.cursor {
+    cursor: pointer;
+}

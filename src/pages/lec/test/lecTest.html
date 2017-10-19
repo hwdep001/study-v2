@@ -6,9 +6,9 @@
     <ion-title>TEST - {{cat.name}}</ion-title>
   </ion-navbar>
 
-  <ion-grid style="padding: 0 0 0 21px; height: 44px; background-color: #e9ebee;">
+  <ion-grid class="add-navi-gird">
     <ion-row>
-      <ion-col col-100 style="padding: 0px;">
+      <ion-col col-100>
         <ion-buttons end>
           <button ion-button item-right (click)="startTest()" [disabled]="isStartBtn == false">
             시작
@@ -23,7 +23,7 @@
 
   <ion-list class="ilist">
     <ion-list-header class="iheader" no-lines>
-      Setting
+      <ion-note item-left>Setting</ion-note>
     </ion-list-header>
     <ion-item class="ilist-item">
       <ion-label>Type</ion-label>
@@ -61,7 +61,7 @@
     <ng-container *ngIf="selectLecType == 0">
     <ion-item class="ilist-item cb-all">
       <ion-label>All</ion-label>
-      <ion-checkbox [(ngModel)]="cbA" (click)="initCheckbox(cbA)" style="padding-top: 14px; padding-bottom: 14px;"></ion-checkbox>
+      <ion-checkbox [(ngModel)]="cbA" (click)="initCheckbox(cbA)"></ion-checkbox>
     </ion-item>
     <ion-item class="ilist-item" *ngFor="let lec of lecs; let i = index">
       <ion-label>{{lec.name}}</ion-label>

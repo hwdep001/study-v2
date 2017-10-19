@@ -1,27 +1,38 @@
 page-lecTest {
+    .add-navi-gird {
+        padding: 0 0 0 21px; 
+        height: 44px; 
+        background-color: map-get($colors, content-bg);
+
+        ion-row {
+            ion-col {
+                padding: 0px;
+            }
+        }
+    }
+
     .icontent {
 
         .ilist {
 
             .iheader {
-                background-color: #e9ebee;
-                margin: 0px;
 
                 ion-note {
-                    color: #757575;
+                    color: map-get($colors, list-header);
                 }
             }
             
             .ilist-item {
-                // background-color: #e9ebee;
-
-                ion-note {
-                    color: black;
-                }
+                background-color: white;
             }
 
             .cb-all {
                 max-height: 44px;
+
+                ion-checkbox {
+                    padding-top: 14px;
+                    padding-bottom: 14px;
+                }
             }
         }
     }
@@ -29,9 +40,5 @@ page-lecTest {
     .margin-100 {
         .fixed-content {margin-top: 100px !important;}
         .scroll-content {margin-top: 100px !important;}
-    }
-
-    .cursor {
-        cursor: pointer;
     }
 }
